@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3D Racing Game</title>
+<style>
+body { margin:0; background:#111; overflow:hidden; perspective:800px; }
+#game {
+  width:400px; height:600px;
+  margin:20px auto;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(#555, #222);
+  transform:rotateX(20deg);
+}
+
+/* Road lines */
+.line {
+  width:8px; height:60px;
+  background:white;
+  position:absolute;
+  left:196px;
+}
+
+/* Player Car (3D look) */
+.car {
+  position:absolute;
+  bottom:20px;
+  left:170px;
+  width:60px;
+  height:120px;
+  transform-style:preserve-3d;
+}
+
+.car-body {
+  width:60px; height:90px;
+  background:linear-gradient(blue, darkblue);
+  border-radius:12px;
+  position:absolute;
+}
+
+.windshield {
+  width:40px; height:30px;
+  background:skyblue;
+  position:absolute;
+  top:10px;
+  left:10px;
+  border-radius:5px;
+}
+
+.seat {
+  width:20px; height:20px;
+  background:black;
+  position:absolute;
+  top:40px;
+}
+.seat.left { left:8px; }
+.seat.right { right:8px; }
+
+.wheel {
+  width:14px; height:28px;
+  background:black;
+  position:absolute;
+  border-radius:5px;
+}
+.w1 { left:-6px; top:10px; }
+.w2 { right:-6px; top:10px; }
+.w3 { left:-6px; bottom:10px; }
+.w4 { right:-6px; bottom:10px; }
+
+.light {
+  width:10px; height:10px;
+  background:yellow;
+  border-radius:50%;
+  position:absolute;
+  bottom:5px;
+}
+.light.l { left:5px; }
+.light.r { right:5px; }
+
+/* Enemy */
+.enemy {
+  width:60px; height:120px;
+  background:linear-gradient(red, darkred);
+  position:absolute;
+  top:-150px;
+  border-radius:12px;
+}
+
+/* Trees */
+.tree {
+  width:30px; height:60px;
+  background:green;
+  position:absolute;
+  border-radius:10px;
+}
+
+#ui {
+  position:absolute;
+  top:10px;
+  left:10px;
+  color:white;
+}
+
+button {
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+
+</style>
+</head>
+<body>
+<div id="game">
+  <div id="ui">Score: 0 | Level: 1</div>
+  <button onclick="pauseGame()">Pause</button>
+
+  <div id="player" class="car">
+    <div class="car-body"></div>
+    <div class="windshield"></div>
+    <div class="seat left"></div>
+    <div class="seat right"></div>
+    <div class="wheel w1"></div>
+    <div class="wheel w2"></div>
+    <div class="wheel w3"></div>
+    <div class="wheel w4"></div>
+    <div class="light l"></div>
+    <div class="light r"></div>
+  </div>
+
+  <div id="enemy" class="enemy"></div>
+  <div id="tree1" class="tree"></div>
+  <div id="tree2" class="tree"></div>
+</div>
+
+<script>
+let player = document.getElementById("player");
+let enemy = document.getElementById("enemy");
+let tree1 = document.getElementById("tree1");
+let tree2 = document.getElementById("tree2");
+let ui = document.getElementById("ui");
+
+let playerX = 170;
+let enemyY = -150;
+let enemyX = Math.random() * 340;
+
+let treeY1 = 0;
+let treeY2 = -300;
+
+let speed = 5;
+let score = 0;
+let level = 1;
+let paused = false;
+
+function pauseGame(){ paused = !paused; }
+
+function update(){
+  if(paused) return;
+
+  enemyY += speed;
+  treeY1 += speed;
+  treeY2 += speed;
+
+  if(enemyY > 600){
+    enemyY = -150;
+    enemyX = Math.random() * 340;
+    score++;
+
+    if(score % 5 === 0){
+      level++;
+      speed += 1;
+    }
+  }
+
+  if(treeY1 > 600) treeY1 = -60;
+  if(treeY2 > 600) treeY2 = -60;
+
+  enemy.style.top = enemyY + "px";
+  enemy.style.left = enemyX + "px";
+
+  tree1.style.top = treeY1 + "px";
+  tree1.style.left = "10px";
+
+  tree2.style.top = treeY2 + "px";
+  tree2.style.left = "360px";
+
+  ui.innerText = "Score: " + score + " | Level: " + level;
+
+  if(playerX < enemyX + 60 && playerX + 60 > enemyX && 500 < enemyY + 120){
+    alert("Game Over Level: " + level);
+    location.reload();
+  }
+}
+
+function loop(){
+  update();
+  requestAnimationFrame(loop);
+}
+
+document.addEventListener("keydown", e=>{
+  if(e.key === "ArrowLeft" && playerX > 0) playerX -= 20;
+  if(e.key === "ArrowRight" && playerX < 340) playerX += 20;
+  player.style.left = playerX + "px";
+});
+
+loop();
+</script>
+
+</body>
+</html>

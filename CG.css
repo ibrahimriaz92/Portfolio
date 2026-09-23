@@ -1,0 +1,847 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    border: 1px solid rgb(180, 175, 175, 0.5);
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+}
+
+/* logo */
+
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 17px;
+}
+
+/* Search Area */
+
+.area {
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin: 15px 0px 0px 18px;
+    padding-left: 10px;
+    display: flex;
+    border: 1px solid rgb(180, 175, 175, 0.5);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search {
+    width: 237px;
+    height: 60px;
+}
+
+.searchbut {
+    display: flex;
+    margin: 0px 0px 0px 22.8px;
+}
+
+#button1 {
+    height: 42px;
+    width: 80px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    left: 26%;
+    background-color: rgb(5, 189, 189);
+    border-radius: 0px 15px 15px 0px;
+    margin: 15px 0px 0px 44px;
+}
+
+/* Links */
+
+.links {
+    display: flex;
+    margin: 27px 0px 0px 0px;
+    list-style-type: none;
+    justify-self: center;
+
+}
+
+.links-a ,.links-a1,.links-a2,.links-a3 {
+    color: rgb(18, 14, 14);
+    border-right: 1px solid grey;
+    padding: 0px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+li {
+    margin-right: 80px;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.linkarea {
+    position: absolute;
+    right: 50px;
+    width: 900px;
+}
+
+.log {
+    position: absolute;
+    right: 5px;
+    margin: 10px 10px 0px 0px;
+
+}
+
+.b-login {
+    padding: 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(5, 189, 189);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Image Text and Image */
+
+#img {
+    width: 100%;
+    height: 500px;
+    background-image: url(Earth.png);
+    background-size: cover;
+}
+
+#imgtext {
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
+
+/* search area on image */
+
+.imgsearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+
+}
+
+.imgarea {
+
+    width: 600px;
+    height: 50px;
+    border: none;
+    margin: 9.5px 0px 0px 0px;
+    padding-left: 30px;
+    border: 1px solid rgb(180, 175, 175);
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+#button2 {
+    height: 51.6px;
+    width: 80px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(5, 189, 189);
+    border-radius: 0px 15px 15px 0px;
+    margin: 9.5px 0px 0px 0px;
+}
+
+/* Tags Area */
+
+.para {
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 47.2%;
+}
+
+.tagslink {
+    display: flex;
+    position: absolute;
+    left: 29%;
+    z-index: 1;
+}
+
+.li {
+    margin: 26px 0px 0px 19px;
+    list-style-type: none;
+
+}
+
+.tags {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(83, 82, 82, 0.5);
+    padding: 5px 10px;
+    border: 1px solid rgb(107, 105, 105);
+    border-radius: 10px;
+
+}
+
+.two-tags {
+    display: flex;
+    position: absolute;
+    left: 38.3%;
+
+}
+
+.two-li {
+    margin: 70px 0px 0px 19px;
+    list-style-type: none;
+}
+
+/* Banner Area */
+
+.banner {
+    margin: 7% 0% 0% 9.5%;
+    justify-items: center;
+}
+
+.img {
+    width: 90%;
+    height: 45%;
+    border-radius: 20px;
+}
+
+/* After Banner */
+#background{
+    background-color: rgb(245, 244, 244,0.5);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+#section-text {
+    margin: 4% 0% 0% 9.5%;
+}
+
+#h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+#p {
+    font-family: "Raleway", sans-serif;
+    margin: 1% 0% 0% 0%;
+}
+
+#trend {
+    margin: 4% 0% 0% 0%;
+}
+
+#outer-tag {
+    display: flex;
+    margin: -1.3% 0% 0% 6%;
+}
+
+.inner-tag {
+    list-style-type: none;
+    margin: 0% 3% 0% 0%;
+}
+
+.a-tag {
+    text-decoration: none;
+    color: rgb(108, 106, 106);
+    background-color: rgba(242, 238, 238, 0.5);
+    padding: 5px 10px;
+    border: 1px solid rgb(196, 195, 195);
+    border-radius: 10px;
+}
+
+/* TEN TAGS IMG */
+
+#section-2Img {
+    margin: 25px 0px 0px 8px;
+    justify-self: center;
+    width: 81.4%;
+}
+
+#part-1 {
+    display: flex;
+}
+
+#one {
+    margin-right: 18.5px;
+}
+
+#house {
+    width: 580px;
+    height: 240px;
+    border-radius: 12px;
+
+}
+
+#two {
+    margin-right: 19px;
+}
+
+#chair {
+    width: 310px;
+    height: 240px;
+    border-radius: 12px;
+
+}
+
+#crown {
+    width: 310px;
+    height: 240px;
+    border-radius: 12px;
+}
+
+#part-2 {
+    margin-top: 15px;
+}
+
+#four {
+    width: 275px;
+    height: 490px;
+    border-radius: 12px;
+}
+
+#part-3 {
+    display: flex;
+    margin-left: 295px;
+    margin-top: -494px;
+}
+
+#five {
+    margin-right: 18.5px;
+}
+
+#car {
+    width: 285px;
+    height: 235px;
+    border-radius: 12px;
+
+}
+
+#six {
+    margin-right: 19px;
+}
+
+#sofa {
+    width: 310px;
+    height: 235px;
+    border-radius: 12px;
+}
+
+#foji {
+    width: 310px;
+    height: 235px;
+    border-radius: 12px;
+}
+
+#part-4 {
+    margin-left: 295px;
+    margin-top: 16px;
+    display: flex;
+}
+
+#eight {
+    margin-right: 18.5px;
+}
+
+#animal {
+    width: 285px;
+    height: 235px;
+    border-radius: 12px;
+}
+
+#nine {
+    margin-right: 19px;
+}
+
+#plant {
+    width: 310px;
+    height: 235px;
+    border-radius: 12px;
+}
+
+#food {
+    width: 310px;
+    height: 235px;
+    border-radius: 12px;
+}
+
+/* Section 2 of imgs  */
+
+#section-1Img {
+    margin: 25px 0px 0px 8px;
+    justify-self: center;
+    width: 81.4%;
+    /* background-color: aqua; */
+}
+
+#eleven{
+    margin-bottom: 15px;
+}
+#wall {
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#twelve{
+    margin-bottom: 15px;
+}
+#jewelry {
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#glasses {
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#part-6{
+    margin-left: 315px;
+    margin-top: -762px;
+}
+#girl {
+    width: 295px;
+    height: 500px;
+    border-radius: 12px;
+}
+#fifteen{
+    margin-top: 15px;
+}
+#rabbit {
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#part-7{
+    display: flex;
+    margin-left: 628px;
+    margin-top: -762.5px;
+}
+
+#fan{
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#seventeen{
+    margin-left: 19px;
+}
+#game{
+    width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#part-8{
+     margin-left: 628px;
+      margin-top: 15.5px;
+}
+#car-parts{
+     height: 240px;
+     border-radius: 12px;
+     width: 610px;
+}
+#part-9{
+    display: flex;
+     margin-left: 628px;
+     margin-top: 15px;
+}
+#rose{
+     width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+#twenty{
+    margin-left: 19px;
+}
+#pancil{
+     width: 295px;
+    height: 240px;
+    border-radius: 12px;
+}
+
+        /* Two parts of browsing */
+#two-parts{
+    justify-content: center;
+    margin-top: 80px;
+    display: flex;
+}
+#section-1{
+    background-color: rgb(245, 244, 244,0.5);
+    width: 400px;
+    justify-items: center;
+    height: 520px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+#text-area{
+    padding: 20px 0px 20px 50px;
+}
+#text-area>h3{
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 5px;
+}
+#text-area>p{
+    margin-top: 10px;
+     font-family: sans-serif;
+     font-size: 15px;
+}
+#browser-link{
+    width: 300px;
+    justify-items: center;
+}
+#animated{
+   margin: 20px 0px 30px 0px;
+   
+}
+#browser{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 221.3px 15px 15px ;
+    color: black;
+}
+
+#rigged{
+    margin: 20px 0px 30px 0px;
+}
+#browser1{
+  border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 238px 15px 15px ;
+    color: black;
+}
+
+#pbr{
+    margin: 20px 0px 30px 0px;
+}
+#browser2{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 254px 15px 15px ;
+    color: black;
+
+}
+#low{
+     margin: 20px 0px 30px 0px;
+}
+#browser3{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 222px 15px 15px ;
+    color: black;
+
+}
+#modal{
+     margin: 20px 0px 30px 0px;
+}
+#browser4{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 178px 15px 15px ;
+    color: black;
+
+}
+#texture{
+     margin: 30px 0px 30px 0px;
+}
+#browser5{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 230px 15px 15px ;
+    color: black;
+
+}
+#script{
+     margin: 20px 0px 30px 0px;
+}
+#browser6{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 188px 15px 15px ;
+    color: black;
+
+}
+#scan{
+     margin: 20px 0px 30px 0px;
+}
+#browser7{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 230px 15px 15px ;
+    color: black;
+
+}
+
+        /* Section 2 */
+#section-2{
+    background-color: rgb(245, 244, 244,0.5);
+    width: 400px;
+    justify-items: center;
+    height: 520px;
+    border-radius: 15px;
+}
+#text-area-2{
+    padding: 20px 10px 20px 50px;
+}
+#text-area-2>h3{
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 5px;
+}
+#text-area-2>p{
+    margin-top: 10px;
+     font-family: sans-serif;
+     font-size: 15px;
+}
+#browser-link-1{
+    width: 300px;
+    justify-items: center;
+}
+#blender{
+   margin: 20px 0px 30px 0px;
+   
+}
+#browser8{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 221.3px 15px 15px ;
+    color: black;
+
+}
+#stl{
+    margin: 20px 0px 30px 0px;
+}
+#browser9{
+  border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 243px 15px 15px ;
+    color: black;
+
+}
+#max{
+    margin: 20px 0px 30px 0px;
+}
+#browser10{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 215px 15px 15px ;
+    color: black;
+
+}
+#maya{
+     margin: 20px 0px 30px 0px;
+}
+#browser11{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 238px 15px 15px ;
+    color: black;
+
+}
+#obj{
+     margin: 20px 0px 30px 0px;
+}
+#browser12{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 248px 15px 15px ;
+    color: black;
+
+}
+#fbx{
+     margin: 20px 0px 30px 0px;
+}
+#browser13{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 245px 15px 15px ;
+    color: black;
+
+}
+#cinema{
+     margin: 20px 0px 30px 0px;
+}
+#browser14{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 205px 15px 15px ;
+    color: black;
+
+}
+#unity{
+     margin: 20px 0px 30px 0px;
+}
+#browser15{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    text-decoration: none;
+    padding: 15px 223px 15px 15px ;
+    color: black;
+
+}
+#hr{
+    margin-top: 150px;
+    width: 900px;
+    justify-self: center;
+}
+
+                /* Heading of CG trader Parts */
+
+#cg-parts{
+    text-align: center;
+    /* background-color: aqua; */
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+#cg-parts>h1{
+    font-weight: 550;
+     font-family: "Raleway", sans-serif;
+     font-size: 40px;
+}
+ 
+                /* Three parts of CG traders */
+#three-cg-parts{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+        /* CG First Part  */
+
+#first-part{
+     background-color: rgb(245, 244, 244,0.5);
+    width: 400px;
+    justify-items: center;
+    height: 450px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+#first-img-part{
+    width: 90px;
+    height: 85px;
+    margin: 40px 0px 0px 40px;
+}
+#head-first-part{
+    margin: 30px 50px 20px 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+#para-first-part{
+    margin: 0px 70px 20px 40px;
+    line-height: 25px;
+     font-family: sans-serif;
+}
+
+        /* CG Second Part  */
+
+#second-part{
+     background-color: rgb(245, 244, 244,0.5);
+    width: 400px;
+    justify-items: center;
+    height: 450px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+#second-img-part{
+    width: 90px;
+    height: 85px;
+    margin: 40px 0px 0px 40px;
+}
+#head-second-part{
+    margin: 30px 120px 20px 20px;
+     font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+#para-second-part{
+    margin: 0px 80px 20px 40px;
+    line-height: 25px;
+     font-family: sans-serif;
+}
+
+        /* CG Third Part  */
+
+#third-part{
+     background-color: rgb(245, 244, 244,0.5);
+    width: 400px;
+    justify-items: center;
+    height: 450px;
+    border-radius: 15px;
+    
+}
+#third-img-part{
+    width: 90px;
+    height: 85px;
+    margin: 40px 0px 0px 40px;
+}
+#head-third-part{
+    margin: 30px 90px 20px 0px;
+     font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+#para-third-part{
+    margin: 0px 100px 20px 40px;
+    line-height: 25px;
+     font-family: sans-serif;
+}
+/* <!-- Custom 3D Solutions Part --> */
+
+#Custom-Solutions{
+    background-color: rgb(2, 31, 65);
+    border-radius: 15px;
+    margin-top: 120px;
+    width: 95%;
+    height: 800px;
+    justify-self: center;
+    padding-top: 60px;
+}
+#Custom-h5{
+    font-size: larger;
+     justify-self: center;
+    color: rgb(12, 240, 240);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+}
+#Custom-h2{
+    font-size: larger;
+     justify-self: center;
+     margin-top: 10px;
+     color: white;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+} 
+/* Footer side */
+#footer{
+    color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    bottom: 0%;
+
+}
+#modes{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#light-mode {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    text-align: left;
+    padding-left: 15px;
+}
+#dark-mode{
+    display: block;
+    padding-right: 15px;
+    text-align: right;
+    width: 100px;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+}
